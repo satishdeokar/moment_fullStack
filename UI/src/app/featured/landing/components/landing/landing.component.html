@@ -1,0 +1,31 @@
+<p>
+  <mat-toolbar color="primary">
+    <span>My Moment Application</span>
+    <span class="example-spacer"></span>
+
+    <button mat-icon-button class="example-icon" style="margin-right: 30px;">
+      <a (click)="login()" style="color:#fff;" mat-raised-button color="accent">Login</a>
+    </button>
+  </mat-toolbar>
+</p>
+
+<div class="row text-center">
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Please Sign In / Sign Up into System</mat-card-title>
+      <mat-card-subtitle>My Moment Application</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="../../../../../assets/images/moment.jpg" alt="Photo of momnet">
+    <mat-card-content>
+      <p>
+        Every moment in our lives is a miracle we should enjoy instead of ignoring.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary"(click)="login()">Sign In</button>
+      <button mat-raised-button color="primary" (click)="signUp()">Sign Up</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
